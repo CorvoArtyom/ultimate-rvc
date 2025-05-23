@@ -97,7 +97,7 @@ logger = logging.getLogger(__name__)
 def _get_audio_separator(
     output_dir: StrPath = INTERMEDIATE_AUDIO_BASE_DIR,
     output_format: str = AudioExt.WAV,
-    segment_size: int = SegmentSize.SEG_256,
+    segment_size: int = 441000,
     sample_rate: int = 44100,
 ) -> Separator:
 
